@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
+  
 
 <div class="container">
     <div class="vertical-nav bg-white" id="sidebar">
+    
 
         <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Main</p>
       
@@ -79,21 +81,27 @@
           </div>
           <div class="timer-container">
             <div class="column-one">
-              <button class="btn btn-primary">Iniciar</button>
-              <button class="btn btn-warning">Pausar</button>
-              <button class="btn btn-danger">Detener</button>
-              <span>Tiempo Extra</span>
-            </div>
+            
+
+              <button class="btn btn-primary"  onclick="iniciar()">Iniciar</button>
+              <button class="btn btn-warning"  onclick="pausar()">Pausar</button>
+              <button class="btn btn-danger"   onclick="detener()">Detener</button><p>
+              </p>
+                <span>Tiempo Extra</span>
+            
+              </div>
   
             <div class="column-two">
+              
               <div class="timer">
-                00:00
+                <p id="timer">00:00
               </div>
               <br>
-              <button class="btn btn-danger">Reiniciar</button>
-              <br>
-              <div class="extra-time">
+             <p></p> <button class="btn btn-danger" onclick="reiniciar()">Reiniciar</button>
+              <p>
+             <div class="extra-time">
                 00:00
+               </p>
               </div>
             </div>
           </div>
