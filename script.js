@@ -14,6 +14,7 @@ function iniciar() {
       alert("¡Han pasado 10 minutos!");
     }
   }, 1000);
+  document.getElementById("Estado").innerHTML="Ocupado";
 }
 
 function pausar() {
@@ -25,6 +26,7 @@ function detener() {
   segundos = 0;
   minutos = 0;
   actualizarTemporizador();
+  document.getElementById("Estado").innerHTML="Disponible";
 }
 
 function reiniciar() {
@@ -45,4 +47,11 @@ function actualizarTemporizador() {
   var tiempo = minutos.toString().padStart(2, "0") + ":";
   tiempo += segundos.toString().padStart(2, "0");
   document.getElementById("timer").innerHTML = tiempo;
+}
+
+function Ocupado(){
+  document.getElementById("Estado").innerHTML="Ocupado";
+}
+function Disponible(){
+  document.getElementById("Estado").innerHTML="Disponible";
 }
